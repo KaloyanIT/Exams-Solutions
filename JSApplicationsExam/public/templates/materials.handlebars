@@ -1,0 +1,22 @@
+{{#each this}}
+<div class="card">  
+  <div class="card-block">
+    <h4 class="card-title">Title: {{title}}</h4>
+    <img src="{{{img}}}" alt="">
+    <p class="card-text"> Description: {{description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">CreatedOn: {{createdOn}}</li>
+    <li class="list-group-item">Rating: {{rating}}</li>
+    <li class="list-group-item">Username: {{user.username}}</li>
+  </ul>
+  <div class="card-block">
+    {{#if comments}} 
+    {{#each comments}} 
+    <a href="#" class="card-link">{{this}}k</a>
+    {{/each}}
+    {{/if}}
+    <!--<a href="#" class="card-link">Another link</a>-->
+  </div>
+</div>
+{{/each}}

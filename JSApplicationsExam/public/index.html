@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GoodMats</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">    
+        <link rel="stylesheet" href="./bower_components/toastr/toastr.css">    
+    </head>
+    <body>
+        <div id="root">
+             <header class="container">
+      <div class="row">
+        <h1 class="page-header col-md-6">GoodMats
+          <small>GoodMatsr</small>
+        </h1>
+        <form class="form-inline col-md-6" id="container-sign-in">
+          <div class="form-group">
+            <label class="sr-only" for="tb-username">Username</label>
+            <input type="text" class="form-control" id="tb-username" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="tb-password">Password</label>
+            <input type="password" class="form-control" id="tb-password" placeholder="Password">
+          </div>
+          <button id="btn-sign-in" class="btn btn-default">Sign in</button>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+          <a href="#/users/register"> or Register</a>
+        </form>
+        <form class="form-inline col-md-6" id="container-sign-out">
+          <button id="btn-sign-out" class="btn btn-default">Sign out</button>
+        </form>
+      </div>
+      <nav class="navbar navbar-default row">
+        <ul class="nav navbar-nav col-md-8">
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/materials">Materials </a></li>
+          <li><a href="#/search">Search</a></li>
+          <li><a href="#/users">Users</a></li>
+        </ul>
+      </nav>
+    </header>
+            <div id="content">  
+
+            </div>
+        </div>
+      <!-- libs -->
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/navigo/lib/navigo.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./bower_components/crypto-js/crypto-js.js"></script>
+    <script src="./bower_components/toastr/toastr.js"></script>
+
+
+    <!--APP Controllers-->
+    <script src="controllers/home-page-controller.js"></script>
+    <script src="controllers/users-controller.js"></script>
+    <script src="controllers/materials-controller.js"></script>
+    <script src="controllers/search-controller.js"></script>
+    
+
+   
+
+    <!-- app code -->
+    <script src="app/data.js"></script>
+    <script src="app/templates.js"></script>
+    <script src="app/json-requester.js"></script>
+    <script src="app/routing.js"></script>
+    <script src="app/validation.js"></script>
+    
+
+    <!-- App: Start -->
+    <script src="app.js"></script>
+    </body>
+</html>

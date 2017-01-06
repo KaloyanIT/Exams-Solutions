@@ -1,0 +1,10 @@
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\bin\Debug\SuperheroesUniverse.Models.dll.config
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\bin\Debug\SuperheroesUniverse.Models.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\bin\Debug\SuperheroesUniverse.Models.pdb
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\bin\Debug\EntityFramework.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\bin\Debug\EntityFramework.xml
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\obj\Debug\SuperheroesUniverse.Models.csprojResolveAssemblyReference.cache
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\obj\Debug\SuperheroesUniverse.Models.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Models\obj\Debug\SuperheroesUniverse.Models.pdb

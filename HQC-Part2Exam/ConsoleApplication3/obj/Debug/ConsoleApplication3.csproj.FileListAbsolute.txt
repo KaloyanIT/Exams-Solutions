@@ -1,0 +1,10 @@
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.CodeAnalysisLog.xml
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.lastcodeanalysissucceeded
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\bin\Debug\nunit.framework.dll
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\bin\Debug\nunit.framework.xml
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\KaloyanIT\Desktop\Exam\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb

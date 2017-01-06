@@ -1,0 +1,4 @@
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.Framework\bin\Debug\SchoolSystem.Framework.dll
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.Framework\bin\Debug\SchoolSystem.Framework.pdb
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.Framework\obj\Debug\SchoolSystem.Framework.dll
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.Framework\obj\Debug\SchoolSystem.Framework.pdb

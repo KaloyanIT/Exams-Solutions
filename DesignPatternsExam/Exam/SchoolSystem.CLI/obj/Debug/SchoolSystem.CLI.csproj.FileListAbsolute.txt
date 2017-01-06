@@ -1,0 +1,16 @@
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\SchoolSystem.Cli.exe.config
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\SchoolSystem.Cli.exe
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\SchoolSystem.Cli.pdb
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\Ninject.dll
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\Ninject.Extensions.Conventions.dll
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\SchoolSystem.Framework.dll
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\SchoolSystem.Framework.pdb
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\Ninject.xml
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\Ninject.Extensions.Conventions.xml
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\obj\Debug\SchoolSystem.CLI.csprojResolveAssemblyReference.cache
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\obj\Debug\SchoolSystem.Cli.exe
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\obj\Debug\SchoolSystem.Cli.pdb
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\Castle.Core.dll
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\Ninject.Extensions.Factory.dll
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\Castle.Core.xml
+C:\Users\KaloyanIT\Desktop\DesignPatternsExam\Exam\SchoolSystem.CLI\bin\Debug\Ninject.Extensions.Factory.xml

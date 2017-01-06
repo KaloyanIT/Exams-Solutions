@@ -1,0 +1,9 @@
+<p>Title {{title}}</p>
+<p>CreatedOn {{createdOn}}</p>
+{{#if description}}
+<p>Description {{description}}</p>
+{{/if}}
+<img src="{{{img}}}" alt="">
+{{#each comments}}
+    <p>Text {{this.text}}</p>
+{{/each}}

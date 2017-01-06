@@ -1,0 +1,10 @@
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\bin\Debug\ComputersSampleData.Data.dll.config
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\bin\Debug\ComputersSampleData.Data.dll
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\bin\Debug\ComputersSampleData.Data.pdb
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\bin\Debug\EntityFramework.dll
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\bin\Debug\EntityFramework.xml
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\obj\Debug\ComputersSampleData.Data.csprojResolveAssemblyReference.cache
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\obj\Debug\ComputersSampleData.Data.dll
+C:\Users\KaloyanIT\Desktop\DBExam\ComputersSampleData\ComputersSampleData.Data\obj\Debug\ComputersSampleData.Data.pdb

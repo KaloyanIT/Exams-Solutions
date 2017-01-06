@@ -1,0 +1,5 @@
+C:\Users\KaloyanIT\Desktop\Unit-Test-Exam\IntergalacticTravel\bin\Debug\IntergalacticTravel.dll
+C:\Users\KaloyanIT\Desktop\Unit-Test-Exam\IntergalacticTravel\bin\Debug\IntergalacticTravel.pdb
+C:\Users\KaloyanIT\Desktop\Unit-Test-Exam\IntergalacticTravel\obj\Debug\IntergalacticTravel.csprojResolveAssemblyReference.cache
+C:\Users\KaloyanIT\Desktop\Unit-Test-Exam\IntergalacticTravel\obj\Debug\IntergalacticTravel.dll
+C:\Users\KaloyanIT\Desktop\Unit-Test-Exam\IntergalacticTravel\obj\Debug\IntergalacticTravel.pdb

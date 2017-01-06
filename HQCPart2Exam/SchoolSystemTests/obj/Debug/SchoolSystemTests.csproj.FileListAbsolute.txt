@@ -1,0 +1,11 @@
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\obj\Debug\SchoolSystemTests.csprojResolveAssemblyReference.cache
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\bin\Debug\SchoolSystemTests.dll
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\bin\Debug\SchoolSystemTests.pdb
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\bin\Debug\ConsoleApplication3.exe
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\bin\Debug\nunit.framework.dll
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\bin\Debug\ConsoleApplication3.pdb
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\bin\Debug\nunit.framework.xml
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\obj\Debug\SchoolSystemTests.dll
+C:\Users\KaloyanIT\Desktop\Exam\SchoolSystemTests\obj\Debug\SchoolSystemTests.pdb

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ComputersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Computer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComputerTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Vendor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CPUId" Type="Int32" Nullable="false" />
+    <Property Name="Memory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ComputerType" Relationship="Self.FK_Computers_ComputerTypes" FromRole="Computers" ToRole="ComputerTypes" />
+    <NavigationProperty Name="CPU" Relationship="Self.FK_Computers_CPU" FromRole="Computers" ToRole="CPU" />
+    <NavigationProperty Name="GPUs" Relationship="Self.ComputersGPU" FromRole="Computers" ToRole="GPU" />
+    <NavigationProperty Name="StorageDevices" Relationship="Self.ComputersStorageDevices" FromRole="Computers" ToRole="StorageDevices" />
+  </EntityType>
+  <EntityType Name="ComputerType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Computers" Relationship="Self.FK_Computers_ComputerTypes" FromRole="ComputerTypes" ToRole="Computers" />
+  </EntityType>
+  <EntityType Name="CPU">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vendor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NumberOfCores" Type="Int32" Nullable="false" />
+    <Property Name="ClockCycles" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Computers" Relationship="Self.FK_Computers_CPU" FromRole="CPU" ToRole="Computers" />
+  </EntityType>
+  <EntityType Name="GPU">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vendor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GPUTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Memory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="GPUType" Relationship="Self.FK_GPU_GPUTypes" FromRole="GPU" ToRole="GPUTypes" />
+    <NavigationProperty Name="Computers" Relationship="Self.ComputersGPU" FromRole="GPU" ToRole="Computers" />
+  </EntityType>
+  <EntityType Name="GPUType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="GPUs" Relationship="Self.FK_GPU_GPUTypes" FromRole="GPUTypes" ToRole="GPU" />
+  </EntityType>
+  <EntityType Name="StorageDevice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vendor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StorageDeviceTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Size" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="StorageDeviceType" Relationship="Self.FK_StorageDevices_StorageDeviceTypes" FromRole="StorageDevices" ToRole="StorageDeviceTypes" />
+    <NavigationProperty Name="Computers" Relationship="Self.ComputersStorageDevices" FromRole="StorageDevices" ToRole="Computers" />
+  </EntityType>
+  <EntityType Name="StorageDeviceType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="StorageDevices" Relationship="Self.FK_StorageDevices_StorageDeviceTypes" FromRole="StorageDeviceTypes" ToRole="StorageDevices" />
+  </EntityType>
+  <Association Name="FK_Computers_ComputerTypes">
+    <End Role="ComputerTypes" Type="Self.ComputerType" Multiplicity="1" />
+    <End Role="Computers" Type="Self.Computer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComputerTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Computers">
+        <PropertyRef Name="ComputerTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Computers_CPU">
+    <End Role="CPU" Type="Self.CPU" Multiplicity="1" />
+    <End Role="Computers" Type="Self.Computer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPU">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Computers">
+        <PropertyRef Name="CPUId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GPU_GPUTypes">
+    <End Role="GPUTypes" Type="Self.GPUType" Multiplicity="1" />
+    <End Role="GPU" Type="Self.GPU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GPUTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GPU">
+        <PropertyRef Name="GPUTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StorageDevices_StorageDeviceTypes">
+    <End Role="StorageDeviceTypes" Type="Self.StorageDeviceType" Multiplicity="1" />
+    <End Role="StorageDevices" Type="Self.StorageDevice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StorageDeviceTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StorageDevices">
+        <PropertyRef Name="StorageDeviceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComputersGPU">
+    <End Role="Computers" Type="Self.Computer" Multiplicity="*" />
+    <End Role="GPU" Type="Self.GPU" Multiplicity="*" />
+  </Association>
+  <Association Name="ComputersStorageDevices">
+    <End Role="Computers" Type="Self.Computer" Multiplicity="*" />
+    <End Role="StorageDevices" Type="Self.StorageDevice" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="ComputersEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Computers" EntityType="Self.Computer" />
+    <EntitySet Name="ComputerTypes" EntityType="Self.ComputerType" />
+    <EntitySet Name="CPUs" EntityType="Self.CPU" />
+    <EntitySet Name="GPUs" EntityType="Self.GPU" />
+    <EntitySet Name="GPUTypes" EntityType="Self.GPUType" />
+    <EntitySet Name="StorageDevices" EntityType="Self.StorageDevice" />
+    <EntitySet Name="StorageDeviceTypes" EntityType="Self.StorageDeviceType" />
+    <AssociationSet Name="FK_Computers_ComputerTypes" Association="Self.FK_Computers_ComputerTypes">
+      <End Role="ComputerTypes" EntitySet="ComputerTypes" />
+      <End Role="Computers" EntitySet="Computers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Computers_CPU" Association="Self.FK_Computers_CPU">
+      <End Role="CPU" EntitySet="CPUs" />
+      <End Role="Computers" EntitySet="Computers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GPU_GPUTypes" Association="Self.FK_GPU_GPUTypes">
+      <End Role="GPUTypes" EntitySet="GPUTypes" />
+      <End Role="GPU" EntitySet="GPUs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StorageDevices_StorageDeviceTypes" Association="Self.FK_StorageDevices_StorageDeviceTypes">
+      <End Role="StorageDeviceTypes" EntitySet="StorageDeviceTypes" />
+      <End Role="StorageDevices" EntitySet="StorageDevices" />
+    </AssociationSet>
+    <AssociationSet Name="ComputersGPU" Association="Self.ComputersGPU">
+      <End Role="Computers" EntitySet="Computers" />
+      <End Role="GPU" EntitySet="GPUs" />
+    </AssociationSet>
+    <AssociationSet Name="ComputersStorageDevices" Association="Self.ComputersStorageDevices">
+      <End Role="Computers" EntitySet="Computers" />
+      <End Role="StorageDevices" EntitySet="StorageDevices" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ComputersModelStoreContainer" CdmEntityContainer="ComputersEntities">
+    <EntitySetMapping Name="Computers">
+      <EntityTypeMapping TypeName="ComputersModel.Computer">
+        <MappingFragment StoreEntitySet="Computers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComputerTypeId" ColumnName="ComputerTypeId" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="CPUId" ColumnName="CPUId" />
+          <ScalarProperty Name="Memory" ColumnName="Memory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComputerTypes">
+      <EntityTypeMapping TypeName="ComputersModel.ComputerType">
+        <MappingFragment StoreEntitySet="ComputerTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPUs">
+      <EntityTypeMapping TypeName="ComputersModel.CPU">
+        <MappingFragment StoreEntitySet="CPU">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="NumberOfCores" ColumnName="NumberOfCores" />
+          <ScalarProperty Name="ClockCycles" ColumnName="ClockCycles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GPUs">
+      <EntityTypeMapping TypeName="ComputersModel.GPU">
+        <MappingFragment StoreEntitySet="GPU">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="GPUTypeId" ColumnName="GPUTypeId" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Memory" ColumnName="Memory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GPUTypes">
+      <EntityTypeMapping TypeName="ComputersModel.GPUType">
+        <MappingFragment StoreEntitySet="GPUTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StorageDevices">
+      <EntityTypeMapping TypeName="ComputersModel.StorageDevice">
+        <MappingFragment StoreEntitySet="StorageDevices">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="StorageDeviceTypeId" ColumnName="StorageDeviceTypeId" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StorageDeviceTypes">
+      <EntityTypeMapping TypeName="ComputersModel.StorageDeviceType">
+        <MappingFragment StoreEntitySet="StorageDeviceTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ComputersGPU" TypeName="ComputersModel.ComputersGPU" StoreEntitySet="ComputersGPU">
+      <EndProperty Name="Computers">
+        <ScalarProperty Name="Id" ColumnName="ComputerId" />
+      </EndProperty>
+      <EndProperty Name="GPU">
+        <ScalarProperty Name="Id" ColumnName="GPUId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ComputersStorageDevices" TypeName="ComputersModel.ComputersStorageDevices" StoreEntitySet="ComputersStorageDevices">
+      <EndProperty Name="Computers">
+        <ScalarProperty Name="Id" ColumnName="ComputerId" />
+      </EndProperty>
+      <EndProperty Name="StorageDevices">
+        <ScalarProperty Name="Id" ColumnName="StorageDeviceId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

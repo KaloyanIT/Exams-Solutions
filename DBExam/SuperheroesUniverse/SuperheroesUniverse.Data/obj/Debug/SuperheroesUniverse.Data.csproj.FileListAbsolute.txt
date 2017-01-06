@@ -1,0 +1,14 @@
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\SuperheroesUniverse.Data.dll.config
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\SuperheroesUniverse.Data.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\SuperheroesUniverse.Data.pdb
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\EntityFramework.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\SuperheroesUniverse.Models.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\SuperheroesUniverse.Models.pdb
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\EntityFramework.xml
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\obj\Debug\SuperheroesUniverse.Data.csprojResolveAssemblyReference.cache
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\obj\Debug\SuperheroesUniverse.Data.dll
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\obj\Debug\SuperheroesUniverse.Data.pdb
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\obj\Debug\SuperheroesUniverse.Data.Migrations.InitialCreate.resources
+C:\Users\KaloyanIT\Desktop\DBExam\SuperheroesUniverse\SuperheroesUniverse.Data\obj\Debug\SuperheroesUniverse.Data.csproj.GenerateResource.Cache
